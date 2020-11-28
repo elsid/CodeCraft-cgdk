@@ -1,5 +1,8 @@
+use serde::Serialize;
+
 use super::*;
-#[derive(Clone, Debug, trans::Trans)]
+
+#[derive(Clone, Debug, trans::Trans, Serialize)]
 pub enum DebugData {
     Log {
         text: String,
