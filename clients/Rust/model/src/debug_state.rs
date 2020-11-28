@@ -1,5 +1,8 @@
+use serde::Serialize;
+
 use super::*;
-#[derive(Clone, Debug, trans::Trans)]
+
+#[derive(Clone, Debug, trans::Trans, Serialize)]
 pub struct DebugState {
     pub window_size: Vec2I32,
     pub mouse_pos_window: Vec2F32,

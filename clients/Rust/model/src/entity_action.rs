@@ -1,5 +1,8 @@
+use serde::Serialize;
+
 use super::*;
-#[derive(Clone, Debug, trans::Trans)]
+
+#[derive(Clone, Debug, trans::Trans, Serialize)]
 pub struct EntityAction {
     pub move_action: Option<MoveAction>,
     pub build_action: Option<BuildAction>,

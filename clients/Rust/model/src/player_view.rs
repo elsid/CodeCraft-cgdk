@@ -1,5 +1,8 @@
+use serde::Serialize;
+
 use super::*;
-#[derive(Clone, Debug, trans::Trans)]
+
+#[derive(Clone, Debug, trans::Trans, Serialize)]
 pub struct PlayerView {
     pub my_id: i32,
     pub map_size: i32,
