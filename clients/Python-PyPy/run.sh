@@ -1,4 +1,4 @@
 set -ex
 
 cd /output
-jruby ./main.rb "$@"
+pypy3 ./main.py "$@"
