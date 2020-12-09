@@ -2,7 +2,7 @@ use serde::Serialize;
 
 use super::*;
 
-#[derive(Clone, Debug, trans::Trans, Serialize)]
+#[derive(Clone, Debug, trans::Trans, Serialize, Default)]
 pub struct EntityProperties {
     pub size: i32,
     pub build_score: i32,
