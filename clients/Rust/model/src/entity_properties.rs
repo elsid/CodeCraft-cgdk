@@ -1,5 +1,5 @@
 use super::*;
-#[derive(Clone, Debug, trans::Trans)]
+#[derive(Clone, Debug, trans::Trans, Default)]
 pub struct EntityProperties {
     pub size: i32,
     pub build_score: i32,
