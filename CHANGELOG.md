@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 1.3.0
+
+- Server-side pathfinding now consideres cells out of sight range to be empty
+
+## 1.2.3
+
+- Show fog of war even then no player is selected
+
+## 1.2.2
+
+- Show current number of units of each type
+
+## 1.2.1
+
+- Fix flickering when using debug interface inside `get_action`
+- Entities in `player_view` are now ordered by id
+
 ## 1.2.0
 
 - Saving/loading game state
